@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Store</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="./main.js" defer></script>
+</head>
+
+<body>
+    <!-- =================Header================ -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="./assets/img/logo2.png" alt="logo" class="mLogo">
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#electronics" class="nav__link active-link">Electronics</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#jewelery" class="nav__link active-link">Jewelery</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#men's clothing" class="nav__link active-link">Men</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#women's clothing" class="nav__link active-link">Wemen</a>
+                    </li>
+                </ul>
+
+                <!--======= close button ======-->
+                <div class="nav__close" id="nav-close">
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </div>
+            </div>
+            <!--======= Toggle =========== -->
+            <div class="nav__toggle" id="nav-toggle">
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+            </div>
+        </nav>
+    </header>
+    <!-- =============Home============== -->
+    <section class="home section" id="Home">
+        <img src="./assets/img/7.jpg" alt="home image" class="home__bg">
+        <div class="home__shadow"></div>
+        <div class="home__container container grid">
+            <div class="home__data">
+                <h1 class="home__title">
+                    Explore <br>
+                    Economical Shopping
+                </h1>
+                <a href="#" class="button">
+                    start your journey
+                    <span class="material-symbols-outlined">
+                        arrow_forward
+                    </span>
+                </a>
+            </div>
+            <div class="home__cards grid">
+                <article class="home__card">
+                    <img src="./assets/img/electronics.jpg" alt="home image" class="home__card-img">
+                    <a href="#">
+                        <h3 class="home__card-title">Electronics</h3>
+                    </a>
+                    <div class="home__card-shadow"></div>
+
+                </article>
+
+                <article class="home__card">
+                    <img src="./assets/img/jewelry.jpg" alt="home image" class="home__card-img">
+                    <a href="#">
+                        <h3 class="home__card-title">Jewelery</h3>
+                    </a>
+                    <div class="home__card-shadow"></div>
+
+                </article>
+
+                <article class="home__card">
+                    <img src="./assets/img/jeans.jpg" alt="home image" class="home__card-img">
+                    <a href="#">
+                        <h3 class="home__card-title">Men</h3>
+                    </a>
+                    <div class="home__card-shadow"></div>
+
+                </article>
+
+                <article class="home__card">
+                    <img src="./assets/img/women.jpg" alt="home image" class="home__card-img">
+                    <a href="#">
+                        <h3 class="home__card-title">Wemen</h3>
+                    </a>
+                    <div class="home__card-shadow"></div>
+
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- =======loading gif========= -->
+    <div id="loading-screen">
+        <img src="./assets/img/loading.gif" alt="Loading...">
+    </div>
+    <!--============== Main=============== -->
+    <main id="product-sections">
+        <!-- Products will be dynamically inserted here -->
+    </main>
+
+    <!-- =========Showing Cards with Java===== -->
+    <section id="product-details" style="display: none;"></section>
+
+    <!-- =============Favorites Section ============-->
+    <div class="fav-section">
+        <h2>Favorites</h2>
+        <section id="favorites">
+            <!-- Favorite items will be added here -->
+        </section>
+    </div>
+
+    <!--============== Men============= -->
+    <section class="Men section" id="Men">
+        <div class="Men__container container grid">
+            <div class="Men__data">
+                <h2 class="section__title">
+                    Shop and <br>
+                    Enjoy More
+                </h2>
+                <p class="Men__description">
+                    All clothes around the world are a great pleasure and happiness foe anyone, enjoy the sights
+                    when
+                    you travel the world.Shop safely and without worries, get your trip and explore the paradises
+                    of the world.
+                </p>
+                <a href="" class="button">
+                    Read More
+                    <span class="material-symbols-outlined">
+                        arrow_forward
+                    </span>
+
+                </a>
+            </div>
+            <div class="Men__image">
+                <img src="./assets/img/1.jpg" alt="Men image" class="Men__img">
+                <div class="Men__shadow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!--====================== Styles==================== -->
+    <section class="Styles section" id="Styles">
+        <h2 class="section__title">
+            Enjoy The Beauty <br>
+            Of Our Styles
+        </h2>
+        <div class="Styles__container container grid">
+            <article class="Styles__card">
+                <div class="Styles__image">
+                    <img src="./assets/img/2.jpg" alt="Styles image" class="Styles__img">
+                    <div class="Styles__shadow"></div>
+                </div>
+                <h2 class="Styles__title">
+                    Casual Clothes
+                </h2>
+                <div class="Styles__location">
+                    <span class="material-symbols-outlined">
+                        location_on
+                    </span>
+                    <span>Zara Brand</span>
+                </div>
+            </article>
+            <article class="Styles__card">
+                <div class="Styles__image">
+                    <img src="./assets/img/3.jpg" alt="Styles image" class="Styles__img">
+                    <div class="Styles__shadow"></div>
+                </div>
+                <h2 class="Styles__title">
+                    Formal Dress
+                </h2>
+                <div class="Styles__location">
+                    <span class="material-symbols-outlined">
+                        location_on
+                    </span>
+                    <span>Coats</span>
+                </div>
+            </article>
+            <article class="Styles__card">
+                <div class="Styles__image">
+                    <img src="./assets/img/4.jpg" alt="Styles image" class="Styles__img">
+                    <div class="Styles__shadow"></div>
+                </div>
+                <h2 class="Styles__title">
+                    Set Items
+                </h2>
+                <div class="Styles__location">
+                    <span class="material-symbols-outlined">
+                        location_on
+                    </span>
+                    <span>North Male</span>
+                </div>
+            </article>
+            <article class="Styles__card">
+                <div class="Styles__image">
+                    <img src="./assets/img/5.jpg" alt="Styles image" class="Styles__img">
+                    <div class="Styles__shadow"></div>
+                </div>
+                <h2 class="Styles__title">
+                    T-Shirts
+                </h2>
+                <div class="Styles__location">
+                    <span class="material-symbols-outlined">
+                        location_on
+                    </span>
+                    <span>South Male</span>
+                </div>
+            </article>
+            <article class="Styles__card">
+                <div class="Styles__image">
+                    <img src="./assets/img/6.jpg" alt="Styles image" class="Styles__img">
+                    <div class="Styles__shadow"></div>
+                </div>
+                <h2 class="Styles__title">
+                    Warm Clothes
+                </h2>
+                <div class="Styles__location">
+                    <span class="material-symbols-outlined">
+                        location_on
+                    </span>
+                    <span>East Atole</span>
+                </div>
+            </article>
+            <article class="Styles__card">
+                <div class="Styles__image">
+                    <img src="./assets/img/8.jpg" alt="Styles image" class="Styles__img">
+                    <div class="Styles__shadow"></div>
+                </div>
+                <h2 class="Styles__title">
+                    Jeans
+                </h2>
+                <div class="Styles__location">
+                    <span class="material-symbols-outlined">
+                        location_on
+                    </span>
+                    <span>East Maldive </span>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!-- ================Explore================== -->
+    <section class="explore section" id="Explore">
+        <div class="explore__container">
+            <div class="explore__image">
+                <img src="./assets/img/9.jpg" alt="explore image" class="explore__img">
+            </div>
+            <div class="explore__content container grid">
+                <div class="explore__data">
+                    <h2 class="section__title">
+                        Explore The <br>
+                        Best Clothes
+                    </h2>
+                    <p class="explore__description">
+                        Exploring paradises such as islands and valleys when travelling the world is one of the
+                        greatest expriences.
+                        <br>
+                        It offers you harmony and peace and you can enjoy it with great comfort.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- ======================Join=============== -->
+
+    <section class="join section jsection">
+        <h2 class="section__title">
+            Your Journey <br>
+            Start Here
+        </h2>
+        <div class="join__container container grid">
+
+            <div class="join__data">
+
+
+                <p class="join__description">
+                    Get up to data with the latest travel and information from us.
+                </p>
+                <form action="#" class="join__form">
+                    <button class="join__button button">
+                        Enter to Rejister
+                        <span class="material-symbols-outlined">
+                            arrow_forward
+                        </span>
+                    </button>
+                    <button class="join__button button">
+                        Informe of News
+                        <span class="material-symbols-outlined">
+                            arrow_forward
+                        </span>
+                    </button>
+                    <button class="join__button button">
+                        Informe of Experiences
+                        <span class="material-symbols-outlined">
+                            arrow_forward
+                        </span>
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+    <!--==================== Footer================= -->
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div class="footer__content grid">
+                <div>
+                    <a href="" class="footer__logo">Travel</a>
+                    <p class="footer__description">
+                        Travel with us and explore <br>
+                        the world without limits.
+                    </p>
+                </div>
+                <div class="footer__data grid">
+                    <div>
+                        <h3 class="footer__title">Men</h3>
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#" class="footer__link">Men Us</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Features</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">News and Blog</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div>
+                        <h3 class="footer__title">Company</h3>
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#" class="footer__link">FAQs</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">History</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Testimonials</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div>
+                        <h3 class="footer__title">Contact</h3>
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#" class="footer__link">Call Center</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Support Center</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Contact Us</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div>
+                        <h3 class="footer__title">Support</h3>
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#" class="footer__link">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Services</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Payments</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="footer__group">
+                <div class="footer__social" style="text-align: center;">
+                    <a href="#" class="footer__social-link">
+                        <span class="material-symbols-outlined">
+                            mail
+                        </span>
+                    </a>
+                    <span>info@visitmaldives.com</span>
+
+                </div>
+
+                <div class="footer__copy" style="text-align: center;">
+                    Copyright: All rights reserved
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ====================Scroll Up===================== -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <span class="material-symbols-outlined">
+            arrow_upward
+        </span>
+    </a>
+
+</body>
+
+</html>
